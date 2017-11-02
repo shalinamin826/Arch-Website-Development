@@ -1,0 +1,247 @@
+﻿<%@ Page Language="C#" AutoEventWireup="false" CodeFile="Contact2.aspx.cs" Inherits="Contact2" %>
+<!-- === BEGIN HEADER === -->
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<head>
+    <!-- Title -->
+    <title>Arch Plastics Packaging - Your Packaging Partners</title>
+    <!-- Meta -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!-- Favicon -->
+    <link href="favicon.ico" rel="shortcut icon">
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" rel="stylesheet">
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/nexus.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/custom.css" rel="stylesheet">
+    <!-- Google Fonts-->
+    <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="body-bg">
+        <!-- Header -->
+        <!-- Phone/Email -->
+        <div id="pre-header" class="background-gray-lighter">
+            <div class="container no-padding">
+                <div class="row hidden-xs">
+                    <div class="col-sm-6 padding-vert-5">
+                        <strong>Phone:</strong>&nbsp;1-423-553-7751
+                    </div>
+                    <div class="col-sm-6 text-right padding-vert-5">
+                        <strong>Email:</strong>&nbsp;sales@archplasticsllc.com
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Phone/Email -->
+        <!-- Header -->
+        <div id="header">
+            <div class="container">
+                <div class="row">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="index.html" title="">
+                            <img src="assets/img/logo.png" alt="Logo" style="vertical-align:top;" />
+                        </a>
+                    </div>
+                    <!-- End Logo -->
+                </div>
+            </div>
+        </div>
+        <!-- End Header -->
+        <!-- Top Menu -->
+        <div id="hornav" class="bottom-border-shadow">
+            <div class="container no-padding border-bottom">
+                <div class="row">
+                    <div class="visible-lg">
+                        <ul id="hornavmenu" class="nav navbar-nav">
+                            <li>
+                                <a href="index.html" class="fa-home">Home</a>
+                            </li>
+                            <li>
+                                <span class="fa-gears ">Focus</span>
+                                <ul>
+                                    <li>
+                                        <a href="Quality.html">Quality</a>
+                                    </li>
+                                    <li>
+                                        <a href="Customer.html">Customer</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+								    <a href="capabilities.html" class="fa-th-list">Capabilities</a>
+                            </li>
+                            <li>
+                            <li>                                
+                                <a href="marketsegment.html" class="fa-th-large">Market Segment</a>
+                            </li>
+                            <li>
+                                <span class="fa-th">Product</span>
+                                    <ul>
+									    <li>
+                                            <a href="readytoship.html">Ready to Ship</a>
+                                        </li>
+                                        <li>
+                                            <a href="customproducts.html">Custom Products</a>
+                                        </li>	    
+                                    </ul> 
+                            </li>
+                            <li>
+							    <a href="casestudy.html" class="fa-copy">Case Study</a>
+                            </li>
+                            <li>							
+                                <a href="career.html" class="fa-file ">Career</a>
+                            </li>
+                            <li>
+                                <a href="contact.html" class="fa-comment active">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Top Menu -->
+        <!-- End of Header -->
+        <!-- === BEGIN CONTENT === -->
+        <div id="content">
+            <div class="container background-white">
+                <div class="row margin-vert-30">
+                    <!-- Main Column -->
+                    <div class="col-md-9">
+                        <!-- Main Content -->
+                        <div class="headline">
+                            <h2>Contact Form</h2>
+                        </div>
+                        <p>
+                            Please tell us how we may assist you to to fulfill your packaging needs. Please fill out the details in the form or send us an e-mail or call us.
+                            Thank you for visiting our site!.
+                        </p>
+                        <!-- Contact Form -->
+                          <form id="form1" runat="server">
+                              <asp:Label ID="lblMessage" runat="server" CssClass="label" Visible="false"></asp:Label><br />
+
+                            <label>Name
+                              <span class="color-red">*</span></label>
+                            <div class="row margin-bottom-20">
+                                <div class="col-md-6 col-md-offset-0">
+                                    <asp:TextBox id="txtName" runat="server" CssClass="form-control"></asp:TextBox> 
+                                    <asp:RequiredFieldValidator ID="reqName" runat="server" ControlToValidate="txtName" ErrorMessage="Name Required" ForeColor="Red"></asp:RequiredFieldValidator>
+                                </div>
+                            </div>
+                            <label>
+                                Email
+                                <span class="color-red">*</span>
+                            </label>
+                            <div class="row margin-bottom-20">
+                                <div class="col-md-6 col-md-offset-0">
+                                    <asp:TextBox id="txtSender" runat="server" CssClass="form-control"></asp:TextBox>  
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtSender" ErrorMessage="Email Required" ForeColor="Red"></asp:RequiredFieldValidator>
+                                                                       
+                                </div>
+                            </div>
+                            <label>
+                                Upload Document
+                                <span class="color-red"></span>
+                            </label>
+                            <div class="row margin-bottom-20">
+                                <div class="col-md-6 col-md-offset-0">
+                                    <asp:FileUpload ID="txtAttachment" runat="server" CssClass="form-control" />                                    
+                                </div>
+                            </div>
+                            <label>Message</label>
+                            <div class="row margin-bottom-20">
+                                <div class="col-md-8 col-md-offset-0">
+                                    <asp:TextBox id="txtMessage" Rows="8" TextMode="MultiLine" runat="server" CssClass="form-control"></asp:TextBox> 
+                                </div>
+                            </div>
+                            <p>                                
+                                <asp:Button ID="btnSubmit" OnClick="Button1_Click" runat="server" CssClass="btn btn-primary" Text="Send Message" /><br />
+                                
+                            </p>
+                        </form>
+                        <!-- End Contact Form -->
+                        <!-- End Main Content -->
+                    </div>
+                    <!-- End Main Column -->
+                    <!-- Side Column -->
+                    <div class="col-md-3">
+                        <!-- Recent Posts -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Contact Info</h3>
+                            </div>
+                            <div class="panel-body">
+
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <i class="fa-phone color-primary"></i>+423-553-7751
+                                    </li>
+									<li>
+                                        <i class="fa-print color-primary"></i>+423-553-7754
+                                    </li>
+                                    <li>
+                                        <i class="fa-envelope color-primary"></i>sales@archplasticsllc.com
+                                    </li>
+                                    <li>
+                                        http://www.archplasticsllc.com
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- End recent Posts -->
+                        <!-- About -->
+                        <!-- End About -->
+                    </div>
+                    <!-- End Side Column -->
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div id="footer" class="background-grey">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Menu -->
+                    <div id="footermenu" class="col-md-8">
+                       Arch Plastics Packaging, 2010 Polymer Drive, Chattanooga, TN 37421.
+                    </div>
+                    <!-- End Footer Menu -->
+                    <!-- Copyright -->
+                    <div id="copyright" class="col-md-4">
+                        <p class="pull-right">(c) 2017 Your Copyright Info</p>
+                    </div>
+                    <!-- End Copyright -->
+                </div>
+            </div>
+        </div>
+        <!-- End Footer -->
+        <!-- JS -->
+        <script type="text/javascript" src="assets/js/jquery.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="assets/js/scripts.js"></script>
+        <!-- Isotope - Portfolio Sorting -->
+        <script type="text/javascript" src="assets/js/jquery.isotope.js" type="text/javascript"></script>
+        <!-- Mobile Menu - Slicknav -->
+        <script type="text/javascript" src="assets/js/jquery.slicknav.js" type="text/javascript"></script>
+        <!-- Animate on Scroll-->
+        <script type="text/javascript" src="assets/js/jquery.visible.js" charset="utf-8"></script>
+        <!-- Sticky Div -->
+        <script type="text/javascript" src="assets/js/jquery.sticky.js" charset="utf-8"></script>
+        <!-- Slimbox2-->
+        <script type="text/javascript" src="assets/js/slimbox2.js" charset="utf-8"></script>
+        <!-- Modernizr -->
+        <script src="assets/js/modernizr.custom.js" type="text/javascript"></script>
+
+        <!-- End JS -->
+        </div>
+</body>
+</html>
